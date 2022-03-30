@@ -9,7 +9,7 @@ package u6ej14;
  *
  * @author 34616
  */
-public class Frigorifico  extends Electrodomestico implements Silencioso {
+public class Frigorifico  extends Electrodomestico implements Silencioso, Comparable<Frigorifico> {
     private double capacidad;
 
     public Frigorifico(double capacidad, double consumo, String modelo) {
@@ -35,6 +35,11 @@ public class Frigorifico  extends Electrodomestico implements Silencioso {
     @Override
     public String toString() {
         return super.toString()+"Frigorifico{" + "capacidad=" + capacidad + '}';
+    }
+
+    @Override
+    public int compareTo(Frigorifico t) {
+        return Double.compare(this.capacidad, t.capacidad);
     }
 
     

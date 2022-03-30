@@ -56,3 +56,13 @@ public abstract class Persona {
     }
     
 }
+/* Tenemos la clase vuelo con 5 atributos, codigo de vuelgo, ciudad origen, ciudad destino, duracion vuelo
+    lista pasajeros.
+ Un main que genere una lista de vuelos y añadir un metodo statico que devuelva un map, 
+ese map contiene para cada destino el numero de pasajeros que llegan a ese destino(de todos los vuelos)
+
+un metodo igual que el anterior pero que devuleva los mismo pero los destinos ordenados alfabeticamente
+
+3º que permita saber por codigo de vuelo los pasajeros que hay.
+
+*/

@@ -9,7 +9,7 @@ package u6ej14;
  *
  * @author 34616
  */
-public class Microondas extends Electrodomestico implements Silencioso{
+public class Microondas extends Electrodomestico implements Silencioso, Comparable<Microondas>{
     private int potenciaMax;
 
     public Microondas(int potenciaMax, double consumo, String modelo) {
@@ -33,6 +33,11 @@ public class Microondas extends Electrodomestico implements Silencioso{
     @Override
     public String toString() {
         return super.toString()+"Microondas{" + "potenciaMax=" + potenciaMax + '}';
+    }
+
+    @Override
+    public int compareTo(Microondas t) {
+        return this.potenciaMax-t.potenciaMax;
     }
     
 }
