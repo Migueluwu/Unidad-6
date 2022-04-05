@@ -64,6 +64,7 @@ public abstract class Libro  extends Producto implements Comparable<Libro>{
         final Libro other = (Libro) obj;
         return Objects.equals(this.isbn, other.isbn);
     }
+    public abstract void leerLibro();
 
     @Override
     public int compareTo(Libro t) {

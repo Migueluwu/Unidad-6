@@ -80,6 +80,21 @@ public class MiTienda {
         System.out.println(listaLibro.contains(
                 new LibroDigital(163,"991133", "994422", 15, 10, "Nacidos de la bruma")));
         
+        ArrayList<SeEnvia> listaSeEnvia=new ArrayList<>();
+        for(Producto aux: listaProductos){
+            if(aux instanceof SeEnvia){
+                listaSeEnvia.add((SeEnvia)aux);// Conversion explicita
+            }
+        }
+        
+        for(SeEnvia aux: listaSeEnvia){
+            aux.enviar("Aqui");
+        }
+            
+        //Ya he creado el metodo abstracto para Libro, ahora lo voy a ejecutar
+        for(Libro aux: listaLibro){
+            aux.leerLibro();
+        }
             
     }
     private static void ordenarPorPrecio(ArrayList<Producto> listaProductos){

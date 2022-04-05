@@ -71,5 +71,10 @@ public final class LibroPapel extends Libro implements SeEnvia{
         final LibroPapel other = (LibroPapel) obj;
         return this.numPag == other.numPag;
     }
+
+    @Override
+    public void leerLibro() {
+        System.out.println("Empiezo a leer el libro y se me pierde el marcapaginas :(");
+    }
     
 }
